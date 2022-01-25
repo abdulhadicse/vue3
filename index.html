@@ -12,7 +12,22 @@
     <div id="app">
         <h1>{{ name }}</h1>
         <!-- class, src, style, href, alt ( v-bind: ) -->
-        <a :href="url">Google</a> 
+        <a :href="url">Google</a>
+
+        <div v-if="stoke > 10"> 
+            <p>In Stoke</p>
+        </div>
+        <div v-else-if = "stoke < 10 && stoke > 0"> 
+            <p>Almot sesh!</p>
+        </div>
+        <div v-else> 
+            <span>
+                Out of stoke
+            </span> 
+        </div>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, harum!
+        </p>
     </div>
 
 
