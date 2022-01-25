@@ -8,7 +8,17 @@
     <script src="https://unpkg.com/vue@next"></script>
 </head>
 <body>
-    <h1> Initial Commit </h1>
+    
+    <div id="app">
+        <h1>{{ name }}</h1>
+        <!-- class, src, style, href, alt ( v-bind: ) -->
+        <a :href="url">Google</a> 
+    </div>
+
+
     <script src="main.js"></script>
+    <script> 
+        const appMount = app.mount( "#app" );
+    </script>
 </body>
 </html>
