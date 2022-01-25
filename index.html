@@ -35,6 +35,21 @@
         <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, harum!
         </p>
+
+        <div>
+            <h1>Shop cart : {{ cart }}</h1>
+            <button @click = "addToCart()"> Buy now </button>
+        </div>
+
+        <!-- Style binding -->
+        <p :style="pSty"> Lorem ipsum dolor sit amet. </p>
+        <!-- camel case ( 'backgroundColor': 'blue' ) vs kebab case ( 'background-color': 'blue' ) -->
+        <p :style="{ color: 'red', 'background-color': 'blue' }"> Lorem ipsum dolor sit amet. </p>
+
+        <!-- class binding -->
+        <p :class="{ active : stoke }" > Class Binding </p>
+        <!-- { active_css_class : property which is true } -->
+        <p :class = "[ stoke ? 'active' : '' ]" > Inline Ternary Class </p>
     </div>
 
 

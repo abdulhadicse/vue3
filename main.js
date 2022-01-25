@@ -3,9 +3,21 @@ const app = Vue.createApp({
         return {
             name : 'Vue Initial',
             url : 'https://www.google.com',
-            stoke : 15,
+            stoke : true,
             degrees : [ 'PSC', 'JSC', 'SSC', 'HSC', 'Varsity' ],
-            courses: [ 'WEB', 'MOBILE', 'iOS' ]
+            courses: [ 'WEB', 'MOBILE', 'iOS' ],
+            cart : 0,
+            //addToCart : 'HI',
+            pSty : { 
+                backgroundColor : 'red',
+                fontSize : '20px',
+                color: 'whi'
+             }
+        }
+    },
+    methods: {
+        addToCart() {
+            this.cart += 1; 
         }
     }
 });
