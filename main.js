@@ -15,9 +15,27 @@ const app = Vue.createApp({
              }
         }
     },
+    computed : {
+        nameWithCart() {
+            return this.name + ' ' + this.cart;
+        }
+    },
     methods: {
         addToCart() {
             this.cart += 1; 
         }
     }
 });
+
+app.component( 'contact-info', {
+    data() {
+        return {
+            name : 'Contact Info'
+        }
+    },
+    template : `
+        <div>
+            <h1> {{name}} </h1>
+        </div>
+    `,
+} );

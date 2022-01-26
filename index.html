@@ -10,6 +10,9 @@
 <body>
     
     <div id="app">
+        <!-- component register under vue -->
+        <contact-info></contact-info>
+
         <h1>{{ name }}</h1>
         <!-- class, src, style, href, alt ( v-bind: ) -->
         <a :href="url">Google</a>
@@ -50,6 +53,9 @@
         <p :class="{ active : stoke }" > Class Binding </p>
         <!-- { active_css_class : property which is true } -->
         <p :class = "[ stoke ? 'active' : '' ]" > Inline Ternary Class </p>
+
+        <!-- computer property -->
+        <h2> I am form computer property {{ nameWithCart }} </h2>
     </div>
 
 
